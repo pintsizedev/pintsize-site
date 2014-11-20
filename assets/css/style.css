@@ -119,6 +119,11 @@ body {
     text-decoration: underline;
 }
 
+h1 {
+    font-size: 200%;
+    font-weight: 500;
+}
+
 /*
     =================
     Grid
@@ -142,6 +147,25 @@ body {
 
 .centre {
     margin: 0 auto;
+}
+
+/*
+    =================
+    Section Colours
+    =================
+*/
+
+.dark {
+    background-color: #565656;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.light {
+    background-color: #d5d5d5;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*
@@ -204,10 +228,6 @@ body {
     padding-bottom: 30px;
 }
 
-#about h1 {
-    font-size: 200%;
-    font-weight: 500;
-}
 #about p:first-of-type {
     padding-top: 10px;
 }
