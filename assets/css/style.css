@@ -105,6 +105,12 @@ html, body {
     height: 100%;
 }
 
+.hide {
+    position: absolute;
+    top: -99999999px;
+    left: -99999999px;
+}
+
 /*
     =================
     Typography
@@ -151,7 +157,7 @@ h1 {
 
 /*
     =================
-    Section Colours
+    Section Stuff
     =================
 */
 
@@ -166,6 +172,17 @@ h1 {
     background-color: #d5d5d5;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+section h1 {
+    padding-bottom: 10px;
+}
+
+section p {
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
 }
 
 /*
@@ -215,25 +232,18 @@ h1 {
     color: inherit;
 }
 
+div.block {
+    width: 30%;
+    float: left;
+}
+
 /*
     =================
-    About
+    Tabs
     =================
 */
 
-#about {
-    background-color: #565656;
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#about p:first-of-type {
-    padding-top: 10px;
-}
-#about p {
-    margin: 0 auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 90%;
+.tab-container ul li {
+    display: inline-block;
+    list-style: none;
 }

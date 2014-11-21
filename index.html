@@ -2,7 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/tabs.js"></script>
     <script src="assets/js/pintsize.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -37,7 +38,60 @@
     <section id="what-i-do" class="light">
         <div class="container">
             <h1 class="underline">What do I do?</h1>
-            <p>Hello Hello Hello</p>
+            <div class="tab-container">
+                <ul class="tab-nav">
+                    <li><a href="#python" class="current">Python</a></li>
+                    <li><a href="#lua">Lua</a></li>
+                    <li><a href="#php">PHP</a></li>
+                    <li><a href="#java">Java</a></li>
+                    <li><a href="#web">Web Technologies</a></li>
+                </ul>
+                <div class="tab-content">
+                    <ul id="python">
+                        <li><p>
+                            Python was the first language I taught myself whilst I was on holiday in 2009/2010. Since then I've learnt to program in a few other languages.
+                        </p><p>
+                            I have made a few mini programs in Python over the years, and I am trying to work out a project that I could undertake in it. I've used two Python web frameworks, Django and Flask, and have started to build a <a href="#">budget system</a> in Django, which I may even port to a non-web app.
+                        </p></li>
+                    </ul>
+                    <ul id="lua" class="hide">
+                        <li><p>
+                            Lua is the most recent programming language I have taught myself, and whilst it is a bit... Odd. I've found myself enjoying it. I learnt it in order to use the L&ouml;ve framework, but I am interested in it's applications elsewhere.
+                        </p><p>
+                            I am currently using it to write a small <a href="#">game</a> which is something that I have been interested in for years, and I am excited to finally be able to do it using a nice simple language.
+                        </p></li>
+                    </ul>
+                    <ul id="php" class="hide">
+                        <li><p>
+                            PHP is a language that until recently I'd never done much more than touch now and then for educational reasons, as we touched on it in my A Level, and then again in a module last year. And now that I've started to use it properly in a module this year (using the CodeIgniter framework), and in my own personal blog I've become interested in actually learning this properly.
+                        </p><p>
+                            PHP also has an OO aspect, which I am very much looking forward to using as OO is something I enjoy greatly.
+                        </p><p>
+                            Although there are some bad parts of PHP, I cannot wait to begin to explore this language fully, and start to build web applications using it.
+                        </p></li>
+                    </ul>
+                    <ul id="java" class="hide">
+                        <li><p>
+                            Java was the language I learnt last year at uni during our two programming modules, and it was my first experience of OO Programming, and I loved it. OOP just makes so much sense, and it has completely changed the way I code now. If I make anything in Python now, it's usually using classes. My Lua game is all set out into classes, and when I think of how to program things, it's usually thought of in OOP.
+                        </p><p>
+                            Whilst I didn't enjoy the IDE we were taught in, I found it too restrictive and when we advanced past very basic Java I found that it became more of a hindrance than a help. But I enjoyed the actual programming in Java, for the most part. There's a few things that are just bad (Looking at you, checked exceptions), and the amount of deprecation is annoying but understandable. But I enjoy using it, I enjoy the OOP that comes with it, and I cannot wait to do well... More with it.
+                        </p><p>
+                            Overall Java has been a big influence on how I program, more than I ever thought it would be. But I enjoy using it, and I enjoy what it has taught me.
+                        </p></li>
+                    </ul>
+                    <ul id="web" class="hide">
+                        <li><p>
+                            HTML is something I have been interested in for years. Ever since in Year 7 when I saw a book in the library about building websites. The ability to just, write a load of text and have it become a webpage has always amazed me, even now I find myself loving every time I create
+                        </p><p>
+                            In order to get myself more capable at building websites, rather than just looking at the web and cobbling one together, I bought <a href="http://www.amazon.co.uk/Learn-Code-HTML-CSS-Websites/dp/0321940520/ref=sr_1_16?ie=UTF8&qid=1416146252&sr=8-16&keywords=html+css">"Learn to Code HTML and CSS Websites - By Shay Howe"</a> and I am swiftly working my way through that.
+                        </p><p>
+                            That brings me on to CSS, until recently I've never properly learned CSS. But now I am learning it in more detail, starting to find all the things you can do with it, I really cannot wait till I have finished my book and can just start to create better CSS for myself, rather than relying on Bootstrap.
+                        </p><p>
+                            Finally, JavaScript. I've not done too much with this really, but after learning about JQuery in a lecture recently, I'm really interesting in finding out what I can do with JavaScript. We touched on it last year in our Databases and the Web module, and I have just started looking at Node.js for no reason other than curiosity. So once I have worked on my own CSS, I plan to add some JavaScript functionality too, just for more experience.
+                        </p></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 </body>

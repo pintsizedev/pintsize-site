@@ -4,4 +4,8 @@ $(document).ready(function(){
            scrollTop: $("#about").offset().top
        }, 2000);
     });
+
+    $('.tab-container').organicTabs();
+
+
 });
