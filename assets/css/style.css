@@ -243,7 +243,39 @@ div.block {
     =================
 */
 
+.tab-container ul {
+    list-style: none;
+}
+
+.tab-container ul.tab-nav {
+    border-bottom: 1px solid #555555;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .tab-container ul li {
     display: inline-block;
-    list-style: none;
+}
+
+.tab-container ul.tab-nav li {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-bottom: 1px;
+}
+
+.tab-container ul.tab-nav li.current>a {
+    border: 1px solid #555555;
+    border-bottom-color: transparent;
+    background-color: #d5d5d5;
+}
+
+.tab-container .tab-nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 3px 3px 4px;
+
+}
+
+.tab-container .tab-content {
+    padding-top: 5px;
 }

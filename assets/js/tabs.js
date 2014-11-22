@@ -19,7 +19,7 @@
 
             base.$nav.delegate("li > a", "click", function() {
                 // Figure out current list via css class
-                var curList = base.$el.find("a.current").attr("href").substring(1);
+                var curList = base.$el.find("li.current a").attr("href").substring(1);
                 // List moving to
                 $newList = $(this);
                 // Figure out the ID of the new list
@@ -41,8 +41,9 @@
                         });
 
                         // Remove highlighting, add to new clicked tab
-                        base.$el.find('.tab-nav li a').removeClass("current");
-                        $newList.addClass('current');
+                        base.$el.find('.tab-nav li').removeClass("current");
+                        $newCurrent = $newList.parent();
+                        $newCurrent.addClass("current");
                     });
                 }
 
