@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var scrollTime = 2000;
+    var scrollTime = 1000;
     $('#introButton').click(function() {
         $('html, body').animate({
             scrollTop: $("#about").offset().top
@@ -17,6 +17,13 @@ $(document).ready(function(){
     $('#side-what-i-do').click(function() {
         $('html, body').animate({
             scrollTop: $("#what-i-do").offset().top
+        }, scrollTime);
+        return false;
+    });
+
+    $('#side-contact-me').click(function() {
+        $('html, body').animate({
+            scrollTop: $('#contact-me').offset().top
         }, scrollTime);
         return false;
     });

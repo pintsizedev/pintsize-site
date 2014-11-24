@@ -155,6 +155,10 @@ h1 {
     margin: 0 auto;
 }
 
+.text-centre {
+    text-align: center;
+}
+
 /*
     =================
     Section Stuff
@@ -166,6 +170,14 @@ h1 {
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.dark a {
+    color: #d39e31;
+}
+
+.dark a:visited {
+    color: #9f7728;
 }
 
 .light {
@@ -353,7 +365,13 @@ div.block {
     padding-top: 10px;
 }
 
-.sidenav li {}
+.sidenav ul li ul {
+    padding-left: 20px;
+}
+
+.sidenav ul li ul:first-child {
+    padding-top: 0;
+}
 
 .sidenav ul li a {
     text-decoration: none;
