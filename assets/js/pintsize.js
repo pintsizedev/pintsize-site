@@ -1,6 +1,13 @@
 $(document).ready(function(){
     var scrollTime = 1000;
 
+    $('#introButton').click(function() {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top
+        }, scrollTime);
+        return false;
+    });
+
     $('.sidenav ul li a').each(function () {
          $(this).click(function () {
              var target = $(this).attr('href');
