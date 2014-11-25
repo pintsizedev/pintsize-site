@@ -1,335 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="assets/css/sidebar.css">
-    <title>Pintsize.it</title>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/pintsize.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title></title>
 </head>
-<body data-target="#affix-nav" data-spy="scroll">
-<header>
-    <nav class="nav navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="index.html" class="navbar-brand">Pintsize.it</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<div class="container">
-    <div class="row">
-        <aside id="affix-nav" class="sidebar col-md-4 col-sm-4 hidden-xs">
-            <ul class="nav sidenav" data-spy="affix" data-offset-top="10">
-                <li class="active">
-                    <a href="#current-projects">Current Projects</a>
-                    <ul class="nav">
-                        <li><a href="#simple-dungeon-game">Dungeon Game</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#on-hold">On Hold</a>
-                    <ul class="nav">
-                        <li><a href="#budget-system">Budget System</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#past-projects">Past Projects</a>
-                    <ul class="nav">
-                        <li><a href="#a-star-pathfinding">A* Pathfinding</a></li>
-                        <li><a href="#micro-blog-assignment">MicroBlog (assignment)</a></li>
-                        <li><a href="#simple-booking-system">Booking System</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </aside>
-        <div class="col-md-8 col-sm-8 col-xs-12">
-            <section>
-                <h2><cite>Projects:</cite></h2>
-            </section>
-            <section id="current-projects">
-                <h2>Current Projects:</h2>
-                <section id="simple-dungeon-game">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                <h4>Simple Dungeon Game <small> A game written in Lua with the L&ouml;ve game engine </small></h4>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row hidden-xs">
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                            </div>
-                            <p>
-                                This is small, open source, personal project that I started as a way to begin to understand games programming. I have used assets from <a href="http://www.opengameart.org">Open Game Art</a> so that I can focus on the programming aspects of creating a game, rather than the art or sound design of a game.
-                            </p>
-                            <p>
-                                Whilst I don't really have an end goal for this, I'm continuing to develop it in my spare time to further my understanding of how games work. Some day, I hope to one day use everything that I learn during the development of this in order to help me create my own game from the ground up.
-                            </p>
-                            <p>
-                                This project can be found on GitHub <a href="https://github.com/pintsizedev/basicDungeonGame">here</a>.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="blog">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                <h4>Blog <small> A blog written in Php using Laravel</small></h4>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row hidden-xs">
-                                <div class="col-md-4 col-sm-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                            </div>
-                            <p>
-                                I decided to start writing my own blog, where I could write about various things I was doing at the time, from projects, to little tutorials on things I've picked up. And so, I decided to use Php. The reasons for this was mainly due to how widely used Php is in industry, and I figured the best way to learn it was to jump right in.
-                            </p>
-                            <p>
-                                My aim for this is pretty simple, to create my own blog, with the ability to search through posts, and all the other standard things. This shouldn't be too much of an ask to do, and I hope to have it completed soon.
-                            </p>
-                            <p>
-                                Currently, the blog uses bootstrap for the CSS, but I hope to one day change that to my own CSS, but right now I'm focusing on the coding aspect, so having bootstrap for the moment fits my needs.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-            <section id='on-hold'>
-                <h2>On Hold:</h2>
-                <section id="budget-system">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                <h4>Budget System <small>A budget system written in Python using Django</small></h4>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row hidden-xs">
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                            </div>
-                            <p>
-                                This is a budget system written in Python using the Django web framework. It's currently on hold whilst I focus my web efforts on getting my blog up and running, and while I debate whether or not to continue it. I enjoy Python, very much so. But I'm now wondering whether this web app would be better done in an external application, rather than a web one. There are pros and cons for each, so I need to think about it.
-                            </p>
-                            <p>
-                                My aim for this is essentially just to have a system where a user can input all transactions, and set up a budget with a certain amount per week. And the system will figure out whether they are above, or below their budget. Ideally you'd eventually be able to display graphs of your progress, but I'd want to get the core system working first.
-                            </p>
-                            <p>
-                                Currently, the system supports adding new budgets, and adding transactions. As well as creating a user, with username and password. It uses a SQLite3 database, and the CSS is Bootstrap.
-                            </p>
-                            <p>
-                                I chose Django as the web framework simply because it was in Python, and I heard it did some cool things, such as the automatically generated admin pages (Which still amaze me), and the pre-made user model.
-                            </p>
-                            <p>
-                                The code for this can be found on GitHub <a href="https://github.com/pintsizedev/djangoBudget">here</a>.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-            <section id="past-projects">
-                <h2>Past Projects:</h2>
-                <section id="a-star-pathfinding">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                <h4>A* Pathfinding <small> An A* pathfinding algorithm written in Lua</small></h4>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row hidden-xs">
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                            </div>
-                            <p>
-                                During the development of my game, I realised at some point I would probably need some form of pathfinding system. I could have done it badly, but why not try to learn a proper algorithm?
-                            </p>
-                            <p>
-                                What I ended up making was a small program that visulised my a* algorithm using L&ouml;ve, with the ability to change the start and end points. It would then display the shortest path taken to get from point A, to point B.
-                            </p>
-                            <p>
-                                Although consider this project completed, I will revisit it in the future when I decide to finally include it in my game. I will probably end up adding a couple extra features into it, and I will turn it into an actual module, as opposed to a self contained program.
-                            </p>
-                            <p>
-                                The code for this project can be found on GitHub <a href="https://github.com/pintsizedev/astarPathfinding">here</a>
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section id="micro-blog-assignment">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                <h4>Microblog Assignment<small> A simple Microblog using PHP with CodeIgniter</small></h4>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-4 hidden-xs">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                            </div>
-                            <p>
-                                This was a small MicroBlogging site that was written in PHP, using the CodeIgniter web framework, that was developed for an assignment for our Web Development module. It was simply just a MicroBlog, with the ability to follow users, view a feed of your followed users, view profiles of other users, post messages, and of course, log in and out using a username and password.
-                            </p><p>
-                            This was the first time I'd actually created something with PHP, even though I was just about to start my blog. But it was a nice introduction to the world of PHP and a framework. I really enjoyed this assignment a lot, and it's what inspired me to really start to get a concrete knowledge of HTML/CSS.
-                        </p><p>
-                            I'm not sure what the rules are in regards to posting assignment code, so for now I'm just going to keep it offline, however, I'll upload it once everything has been marked, maybe.
-                        </p>
-                        </div>
-                    </div>
-                </section>
-                <section id="simple-booking-system">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                <h4>Simple Booking System<small> A simple booking system built with Ruby on Rails</small></h4>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-4 hidden-xs">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img data-src="holder.js/100%x180" alt="...">
-                                    </a>
-                                </div>
-                            </div>
-                            <p>
-                                Let me just start by saying that this project was my A2 coursework for my Computer Science A Level. And it's bad.
-                            </p>
-                            <p>
-                                This was my first look at the world of web frameworks. We were given a task, to develop a system that used at least 2 database tables. And our teacher reccommended that we use Php. The problem with this was that we could only develop it on the school computers, not at home. And that we couldn't view the logs in order to debug it easier. So, I decided to do it in Ruby on Rails.
-                            </p>
-                            <p>
-                                At the start of this, I had no knowledge of Ruby. I had never used a web framework. The term MVC meant nothing to me. My experience with MySQL was very little. And I had to learn this all on my own, as my teacher also knew as much as I did about Rails.
-                            </p>
-                            <p>
-                                This code is bad. It really is. The term 'fat model, skinny controller' doesn't even apply in the slightest to this. So much of my controller code, should be in the model. It's a mess, it's most likely filled with mistakes due to my misunderstanding of Ruby.
-                            </p>
-                            <p>
-                                The UI is also pretty bad. Looking back on it now, makes me sad. If I hadn't have used Bootstrap, I can't even begin to imagine how awful it would look.
-                            </p>
-                            <p>
-                                I hope to revisit the idea of this one day, just to prove to myself that I can do it correctly. There are a few 'features' of that code that I did because I didn't want to deal with certain things to code because they wouldn't get me marks, such as the ability to book different lengths of time, other than a week. So one day, I will re-do this. Maybe not in RoR, but I will do this, and I will do it right.
-                            </p>
-                            <p>
-                                The code for this can be found on GitHub <a href="https://github.com/pintsizedev/A2-BookingSystem">here</a>.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </section>
-        </div>
+<body>
+<nav class="sidenav" id="sidenav-content">
+    <div class="sidenav-header">
+        <a id="sidenav-close" href="#">X</a>
+        <h2 id="sidenav-title">Pintsize</h2>
     </div>
-</div>
-<footer>
-
-    <div class="container container-fluid">
-        <p class="text-center">
-            <small>Made by Daniel Burnley - <a href="mailto:dan@pintsize.it">dan@pintsize.it</a></small>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#intro">Projects</a></li>
+        <li><ul>
+            <li><a href="#current-projects">Current Projects</a></li>
+            <li><ul>
+                <li><a href="#website">This Website</a></li>
+                <li><a href="#simple-dungeon-game">Dungeon Game</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul></li>
+            <li><a href="#on-hold">On Hold</a></li>
+            <li><ul>
+                <li><a href="#simple-budget">Budget System</a></li>
+            </ul></li>
+            <li><a href="#past-projects">Past Projects</a></li>
+            <li><ul>
+                <li><a href="#a-star-pathfinding">Pathfinding</a></li>
+                <li><a href="#microblog-assessment">Microblog</a></li>
+                <li><a href="#simple-booking-system">Booking System</a></li>
+            </ul></li>
+        </ul></li>
+    </ul>
+</nav>
+<a id="sidenav-open" href="#">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</a>
+<section class="project-intro" id="intro">
+    <div class="container">
+        <h1>Projects</h1>
+    </div>
+</section>
+<section class="dark" id="current-projects">
+    <h1 class="underline section-title">Current Projects:</h1>
+    <div class="container">
+        <section class="project" id="website">
+            <h1 class="underline">Pintsize.it<small>This website</small></h1>
+            <p>
+                This website has been built by me from scratch, using HTML, CSS, JavaScript, and JQuery. And is still undergoing development, and probably will always be when I update it on what I'm doing, or just add more JS/CSS stuff to it to make it really look good.
+            </p>
+            <p>
+                I am actually proud of what I've managed to accomplish here, whilst I'm not completely happy with it (I probably will always be trying to improve it) I am proud that I have managed to create something using things that I have learnt in lectures, and that is in one of the fields I'm interested in going into.
+            </p>
+            <p>
+                My eventual aim for this is.. I'm not really sure. I may one day set up a small local PC Help company, which this will be the website for. And I will eventually (When it's finished) incorporate my blog into it, as well as maybe a twitter feed if I ever decide to get Twitter.
+            </p>
+            <p>
+                All the files for this site are available on GitHub <a href="http://github.com/PintsizeDev/pintsize-site">here</a>.
+            </p>
+        </section>
+        <section class="project" id="simple-dungeon-game">
+            <h1 class="underline inline">Simple Dungeon Game<small>A game written in Lua with the L&ouml;ve game engine </small></h1>
+            <p>
+                This is small, open source, personal project that I started as a way to begin to understand games programming. I have used assets from <a href="http://www.opengameart.org">Open Game Art</a> so that I can focus on the programming aspects of creating a game, rather than the art or sound design of a game.
+            </p>
+            <p>
+                Whilst I don't really have an end goal for this, I'm continuing to develop it in my spare time to further my understanding of how games work. Some day, I hope to one day use everything that I learn during the development of this in order to help me create my own game from the ground up.
+            </p>
+            <p>
+                This project can be found on GitHub <a href="https://github.com/pintsizedev/basicDungeonGame">here</a>.
+            </p>
+        </section>
+        <section class="project" id="blog">
+            <h1 class="underline">Blog<small>A blog written in Php using Laravel</small></h1>
+            <p>
+                I decided to start writing my own blog, where I could write about various things I was doing at the time, from projects, to little tutorials on things I've picked up. And so, I decided to use Php. The reasons for this was mainly due to how widely used Php is in industry, and I figured the best way to learn it was to jump right in.
+            </p>
+            <p>
+                My aim for this is pretty simple, to create my own blog, with the ability to search through posts, and all the other standard things. This shouldn't be too much of an ask to do, and I hope to have it completed soon.
+            </p>
+            <p>
+                Currently, the blog uses bootstrap for the CSS, but I will one day change that to my own CSS, but right now I'm focusing on the coding aspect, so having bootstrap for the moment fits my needs.
+            </p>
+        </section>
+    </div>
+</section>
+<section class="light" id="on-hold">
+    <h1 class="underline section-title">On-hold:</h1>
+    <div class="container">
+        <section class="project" id="simple-budget">
+            <h1 class="underline">Budget System<small>A budget system written in Python using Django</small></h1>
+            <p>This is a budget system written in Python using the Django web framework. It's currently on hold whilst I focus my web efforts on getting my blog up and running, and while I debate whether or not to continue it. I enjoy Python, very much so. But I'm now wondering whether this web app would be better done in an external application, rather than a web one. There are pros and cons for each, so I need to think about it. I have a feeling this will most likely turn into a Java application so that I can practice my Java skills, as well as finally develop this.
+            </p>
+            <p>
+                My aim for this is essentially just to have a system where a user can input all transactions, and set up a budget with a certain amount per week. And the system will figure out whether they are above, or below their budget. Ideally you'd eventually be able to display graphs of your progress, but I'd want to get the core system working first.
+            </p>
+            <p>
+                Currently, the system supports adding new budgets, and adding transactions. As well as creating a user, with username and password. It uses a SQLite3 database, and the CSS is Bootstrap.
+                s  </p>
+            <p>
+                I chose Django as the web framework simply because it was in Python, and I heard it did some cool things, such as the automatically generated admin pages (Which still amaze me), and the pre-made user model.
+            </p>
+            <p>
+                The code for this can be found on GitHub <a href="https://github.com/pintsizedev/djangoBudget">here</a>.
+            </p>
+        </section>
+    </div>
+</section>
+<section class="dark" id="past-projects">
+    <h1 class="underline section-title">Past-Projects:</h1>
+    <div class="container">
+        <section class="project" id="a-star-pathfinding">
+            <h1 class="underline">A* Pathfinding<small> An A* pathfinding algorithm written in Lua</small></h1>
+            <p>
+                During the development of my game, I realised at some point I would probably need some form of pathfinding system. I could have done it badly, but why not try to learn a proper algorithm?
+            </p>
+            <p>
+                What I ended up making was a small program that visulised my a* algorithm using L&ouml;ve, with the ability to change the start and end points. It would then display the shortest path taken to get from point A, to point B.
+            </p>
+            <p>
+                Although consider this project completed, I will revisit it in the future when I decide to finally include it in my game. I will probably end up adding a couple extra features into it, and I will turn it into an actual module, as opposed to a self contained program.
+            </p>
+            <p>
+                The code for this project can be found on GitHub <a href="https://github.com/pintsizedev/astarPathfinding">here</a>
+            </p>
+        </section>
+        <section class="project" id="microblog-assessment">
+            <h1 class="underline">Microblog Assignment<small> A simple Microblog using PHP with CodeIgniter</small></h1>
+            <p>
+                This was a small MicroBlogging site that was written in PHP, using the CodeIgniter web framework, that was developed for an assignment for our Web Development module. It was simply just a MicroBlog, with the ability to follow users, view a feed of your followed users, view profiles of other users, post messages, and of course, log in and out using a username and password.
+            </p><p>
+            This was the first time I'd actually created something with PHP, even though I was just about to start my blog. But it was a nice introduction to the world of PHP and a framework. I really enjoyed this assignment a lot, and it's what inspired me to really start to get a concrete knowledge of HTML/CSS.
+        </p><p>
+            I'm not sure what the rules are in regards to posting assignment code, so for now I'm just going to keep it offline, however, I'll upload it once everything has been marked, maybe.
         </p>
+        </section>
+        <section class="project" id="simple-booking-system">
+            <h1 class="underline">Simple Booking System<small> A simple booking system built with Ruby on Rails</small></h1>
+            <p>
+                Let me just start by saying that this project was my A2 coursework for my Computer Science A Level. And it's bad.
+            </p>
+            <p>
+                This was my first look at the world of web frameworks. We were given a task, to develop a system that used at least 2 database tables. And our teacher recommended that we use Php. The problem with this was that we could only develop it on the school computers, not at home. And that we couldn't view the logs in order to debug it easier. So, I decided to do it in Ruby on Rails.
+            </p>
+            <p>
+                At the start of this, I had no knowledge of Ruby. I had never used a web framework. The term MVC meant nothing to me. My experience with MySQL was very little. And I had to learn this all on my own, as my teacher also knew as much as I did about Rails.
+            </p>
+            <p>
+                This code is bad. It really is. The term 'fat model, skinny controller' doesn't even apply in the slightest to this. So much of my controller code, should be in the model. It's a mess, it's most likely filled with mistakes due to my misunderstanding of Ruby.
+            </p>
+            <p>
+                The UI is also pretty bad. Looking back on it now, makes me sad. If I hadn't have used Bootstrap, I can't even begin to imagine how awful it would look.
+            </p>
+            <p>
+                I hope to revisit the idea of this one day, just to prove to myself that I can do it correctly. There are a few 'features' of that code that I did because I didn't want to deal with certain things to code because they wouldn't get me marks, such as the ability to book different lengths of time, other than a week. So one day, I will re-do this. Maybe not in RoR, but I will do this, and I will do it right.
+            </p>
+            <p>
+                The code for this can be found on GitHub <a href="https://github.com/pintsizedev/A2-BookingSystem">here</a>.
+            </p>
+        </section>
     </div>
-
+</section>
+<footer>
+    <div class="light">
+        <div class="container">
+            <p class="text-centre"><small>Made by Daniel Burnley - <a href="mailto:dan@pintsize.it">dan@pintsize.it</a></small></p>
+        </div>
+    </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/holder/2.4.1/holder.js"></script>
 </body>
 </html>

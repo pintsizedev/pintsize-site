@@ -1,130 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-	<title>Pintsize.it</title>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/pintsize.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title></title>
 </head>
 <body>
-	<header>
-		<nav class="nav navbar-default" role="navigation">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-					</button>
-					<a href="index.html" class="navbar-brand">Pintsize.it</a>
-				</div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact Me</a></li>
-                    </ul>
-                </div>
-            </div>
-		</nav>
-        <section>
-            <div class="alert alert-info alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                This website is still under construction, so expect some changes to be made.
-            </div>
-        </section>
-    </header>
-
-
-    <div class="container container-fluid">
-
-		<section>
-			<h3>Who am I? </h3>
-			<p>
-				My name is Daniel Burnley, and I'm a Computer Science Student at the University of Kent, Canterbury. 
-			</p>
-			<p>
-				I am currently in my second year of university and in my spare time I am enjoying undergoing my own personal projects (Which can be found on my 'projects' page).
-			</p>
-			<p>
-				I have several interests in the area of computing, including games programming, and web development (both front-end and back-end). I've been learning to program for about 5 years now, starting with Python which I taught myself in my spare time.
-			</p>
-			<p>
-				I also have a slight interest in the hardware side of computing, and have experimented a little with Arduinos and taught Year 8 pupils how to use them.
-			</p>
-        </section>
-        <section>
-			<h3>What do I do?</h3>
-			<ul class="nav nav-tabs" role="tablist">
-				<li class="active"><a href="#python" aria-controls="python" role="tab" data-toggle="tab">Python</a></li>
-                <li><a href="#lua" aria-controls="lua" role="tab" data-toggle="tab">Lua</a></li>
-                <li><a href="#php" aria-controls="php" role="tab" data-toggle="tab">PHP</a></li>
-                <li><a href="#java" aria-controls="java" role="tab" data-toggle="tab">Java</a></li>
-                <li><a href="#html" aria-controls="html" role="tab" data-toggle="tab">HTML/CSS/JavaScript</a></li>
+<nav class="sidenav" id="sidenav-content">
+    <div class="sidenav-header">
+        <a id="sidenav-close" href="#">X</a>
+        <h2 id="sidenav-title">Pintsize</h2>
+    </div>
+    <ul>
+        <li><a href="#intro">Home</a></li>
+        <li><ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#what-i-do">What I Do</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+        </ul></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+</nav>
+<a id="sidenav-open" href="#">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</a>
+<section id="intro">
+    <div class="container">
+        <h1>Welcome to Pintsize.it</h1>
+        <a href="#" id="introButton">
+            <h4>Click here or scroll down to learn more</h4>
+        </a>
+    </div>
+</section>
+<section id="about" class="dark">
+    <div class="container">
+        <h1 class="underline">Who am I?</h1>
+        <p>
+            My name is Daniel Burnley and I am an undergraduate at the University of Kent studying Computer Science.
+        </p>
+        <p>
+            I am currently in my second year of university and in my spare time I am enjoying undergoing my own personal projects (Which can be found on my 'projects' page).
+        </p>
+        <p>
+            I have several interests in the area of computing, including games programming, and web development (both front-end and back-end). I've been learning to program for about 5 years now, starting with Python which I taught myself in my spare time.
+        </p>
+        <p>
+            I also have an interest in the hardware side of computing, and have experimented a little with Arduinos and taught Year 8 pupils how to use them, as well as having built my own (and several other) computer.
+        </p>
+    </div>
+</section>
+<section id="what-i-do" class="light">
+    <div class="container">
+        <h1 class="underline">What do I do?</h1>
+        <div class="tab-container">
+            <ul class="tab-nav">
+                <li class="current"><a href="#python">Python</a></li>
+                <li><a href="#lua">Lua</a></li>
+                <li><a href="#php">PHP</a></li>
+                <li><a href="#java">Java</a></li>
+                <li><a href="#web">Web Technologies</a></li>
             </ul>
-            <div class="tab-content container container-fluid">
-                <div role="tabpanel" class="tab-pane active" id="python">
-                    <p>
+            <div class="tab-content">
+                <ul id="python">
+                    <li><p>
                         Python was the first language I taught myself whilst I was on holiday in 2009/2010. Since then I've learnt to program in a few other languages.
                     </p><p>
-                    I have made a few mini programs in Python over the years, and I am trying to work out a project that I could undertake in it. I've used two Python web frameworks, Django and Flask, and have started to build a <a href="projects.html#budget-system">budget system</a> in Django, which I may even port to a non-web app.
-                    </p>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="lua">
-                    <p>
+                        I have made a few mini programs in Python over the years, and I am trying to work out a project that I could undertake in it. I've used two Python web frameworks, Django and Flask, and have started to build a <a href="#">budget system</a> in Django, which I may even port to a non-web app.
+                    </p></li>
+                </ul>
+                <ul id="lua" class="hide">
+                    <li><p>
                         Lua is the most recent programming language I have taught myself, and whilst it is a bit... Odd. I've found myself enjoying it. I learnt it in order to use the L&ouml;ve framework, but I am interested in it's applications elsewhere.
                     </p><p>
-                        I am currently using it to write a small <a href="projects.html#simple-dungeon-game">game</a> which is something that I have been interested in for years, and I am excited to finally be able to do it using a nice simple language.
-                    </p>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="php">
-                    <p>
+                        I am currently using it to write a small <a href="#">game</a> which is something that I have been interested in for years, and I am excited to finally be able to do it using a nice simple language.
+                    </p></li>
+                </ul>
+                <ul id="php" class="hide">
+                    <li><p>
                         PHP is a language that until recently I'd never done much more than touch now and then for educational reasons, as we touched on it in my A Level, and then again in a module last year. And now that I've started to use it properly in a module this year (using the CodeIgniter framework), and in my own personal blog I've become interested in actually learning this properly.
                     </p><p>
                         PHP also has an OO aspect, which I am very much looking forward to using as OO is something I enjoy greatly.
                     </p><p>
                         Although there are some bad parts of PHP, I cannot wait to begin to explore this language fully, and start to build web applications using it.
-                    </p>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="java">
-                    <p>
+                    </p></li>
+                </ul>
+                <ul id="java" class="hide">
+                    <li><p>
                         Java was the language I learnt last year at uni during our two programming modules, and it was my first experience of OO Programming, and I loved it. OOP just makes so much sense, and it has completely changed the way I code now. If I make anything in Python now, it's usually using classes. My Lua game is all set out into classes, and when I think of how to program things, it's usually thought of in OOP.
                     </p><p>
                         Whilst I didn't enjoy the IDE we were taught in, I found it too restrictive and when we advanced past very basic Java I found that it became more of a hindrance than a help. But I enjoyed the actual programming in Java, for the most part. There's a few things that are just bad (Looking at you, checked exceptions), and the amount of deprecation is annoying but understandable. But I enjoy using it, I enjoy the OOP that comes with it, and I cannot wait to do well... More with it.
                     </p><p>
                         Overall Java has been a big influence on how I program, more than I ever thought it would be. But I enjoy using it, and I enjoy what it has taught me.
-                    </p>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="html">
-                    <p>
+                    </p></li>
+                </ul>
+                <ul id="web" class="hide">
+                    <li><p>
                         HTML is something I have been interested in for years. Ever since in Year 7 when I saw a book in the library about building websites. The ability to just, write a load of text and have it become a webpage has always amazed me, even now I find myself loving every time I create
                     </p><p>
-                    In order to get myself more capable at building websites, rather than just looking at the web and cobbling one together, I bought <a href="http://www.amazon.co.uk/Learn-Code-HTML-CSS-Websites/dp/0321940520/ref=sr_1_16?ie=UTF8&qid=1416146252&sr=8-16&keywords=html+css">"Learn to Code HTML and CSS Websites - By Shay Howe"</a> and I am swiftly working my way through that.
+                        In order to get myself more capable at building websites, rather than just looking at the web and cobbling one together, I bought <a href="http://www.amazon.co.uk/Learn-Code-HTML-CSS-Websites/dp/0321940520/ref=sr_1_16?ie=UTF8&qid=1416146252&sr=8-16&keywords=html+css">"Learn to Code HTML and CSS Websites - By Shay Howe"</a> and I am swiftly working my way through that.
                     </p><p>
-                    That brings me on to CSS, until recently I've never properly learned CSS. But now I am learning it in more detail, starting to find all the things you can do with it, I really cannot wait till I have finished my book and can just start to create better CSS for myself, rather than relying on Bootstrap.
+                        That brings me on to CSS, until recently I've never properly learned CSS. But now I am learning it in more detail, starting to find all the things you can do with it, I really cannot wait till I have finished my book and can just start to create better CSS for myself, rather than relying on Bootstrap.
                     </p><p>
-                    Finally, JavaScript. I've not done too much with this really, but after learning about JQuery in a lecture recently, I'm really interesting in finding out what I can do with JavaScript. We touched on it last year in our Databases and the Web module, and I have just started looking at Node.js for no reason other than curiosity. So once I have worked on my own CSS, I plan to add some JavaScript functionality too, just for more experience.
-                    </p>
-                </div>
+                        Finally, JavaScript. I've not done too much with this really, but after learning about JQuery in a lecture recently, I'm really interesting in finding out what I can do with JavaScript. We touched on it last year in our Databases and the Web module, and I have just started looking at Node.js for no reason other than curiosity. So once I have worked on my own CSS, I plan to add some JavaScript functionality too, just for more experience.
+                    </p></li>
+                </ul>
             </div>
-		</section>
-	</div>
-
-	<footer>
-		
-		<div class="container container-fluid">
-			<p class="text-center">
-				<small>Made by Daniel Burnley - <a href="mailto:dan@pintsize.it">dan@pintsize.it</a></small>
-			</p>
-		</div>
-
-	</footer>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+        </div>
+    </div>
+</section>
+<section class="dark" id="contact-me">
+    <div class="container">
+        <h1 class="underline">Contact Me</h1>
+        <p>
+            If you are interested in contacting me for any reason, please email me at:
+        </p>
+        <p class="text-centre"><a href="mailto:dan@pintsize.it">dan@pintsize.it</a></p>
+        <p>
+            And follow me on GitHub:
+        </p>
+        <p class="text-centre"><a href="http://github.com/pintsizedev">Github - PintsizeDev</a></p>
+        <p>Feel free to contact me if you wish to discuss what I do, or even if you're interested on working on a project with me, trust me, I'd love to join someone on a project, so give me an email if you're interested. I will reply ASAP.</p>
+    </div>
+</section>
+<footer>
+    <div class="light">
+        <div class="container">
+            <p class="text-centre"><small>Made by Daniel Burnley - <a href="mailto:dan@pintsize.it">dan@pintsize.it</a></small></p>
+        </div>
+    </div>
+</footer>
 </body>
- </html>
+</html>
