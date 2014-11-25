@@ -1,32 +1,16 @@
 $(document).ready(function(){
     var scrollTime = 1000;
-    $('#introButton').click(function() {
-        $('html, body').animate({
-            scrollTop: $("#about").offset().top
-        }, scrollTime);
-        return false;
+
+    $('.sidenav ul li a').each(function () {
+         $(this).click(function () {
+             var target = $(this).attr('href');
+             $('html, body').animate({
+                 scrollTop: $(target).offset().top
+             }, scrollTime);
+             return false;
+         });
     });
 
-    $('#side-about').click(function() {
-        $('html, body').animate({
-            scrollTop: $("#about").offset().top
-        }, scrollTime);
-        return false;
-    });
-
-    $('#side-what-i-do').click(function() {
-        $('html, body').animate({
-            scrollTop: $("#what-i-do").offset().top
-        }, scrollTime);
-        return false;
-    });
-
-    $('#side-contact-me').click(function() {
-        $('html, body').animate({
-            scrollTop: $('#contact-me').offset().top
-        }, scrollTime);
-        return false;
-    });
 
     $('.tab-container').organicTabs();
 

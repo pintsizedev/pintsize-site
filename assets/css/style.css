@@ -117,7 +117,8 @@ html, body {
     =================
 */
 body {
-    font-family: 'Raleway', sans-serif ;
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 16px;
     color: #555;
 }
 
@@ -172,11 +173,11 @@ h1 {
     padding-bottom: 30px;
 }
 
-.dark a {
+a {
     color: #d39e31;
 }
 
-.dark a:visited {
+a:visited {
     color: #9f7728;
 }
 
@@ -188,6 +189,16 @@ h1 {
 
 section h1 {
     padding-bottom: 10px;
+}
+
+section h1.inline {
+    display: inline-block;
+}
+
+h1 small {
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 60%;
 }
 
 section p {
@@ -270,7 +281,7 @@ div.block {
 }
 
 .tab-container ul.tab-nav li {
-    padding-bottom: 4px;
+    /*padding-bottom: 4px;*/
     padding-top: 4px;
     margin-bottom: 1px;
 }
@@ -284,8 +295,9 @@ div.block {
 .tab-container .tab-nav a {
     text-decoration: none;
     color: inherit;
-    padding: 3px 3px 4px;
-
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
 }
 
 .tab-container .tab-content {
@@ -336,6 +348,11 @@ div.block {
     margin-left: 10px;
     margin-top: 10px;
     width: 32px;
+    transition: background 0.2s ease;
+}
+
+#sidenav-open:hover {
+    background: rgba(80,80,80,0.7);
 }
 
 #sidenav-close {
@@ -383,4 +400,28 @@ div.block {
 
 .sidenav ul li a:hover {
     color: white;
+}
+
+/*
+    =================
+    Projects.html
+    =================
+*/
+
+#intro.project-intro {
+    height: 50%;
+}
+
+.project {
+    padding: 20px 0;
+    border-bottom: 1px #1a1a1a solid;
+}
+
+.project:last-child {
+    border: 0;
+}
+
+.section-title {
+    margin: 0 auto;
+    width: 960px;
 }
